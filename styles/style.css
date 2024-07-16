@@ -525,6 +525,10 @@ footer {
 .footer-add-list-link:hover {
   color: #fd9222;
 }
+.footer-bottom {
+  display: flex;
+  align-items: center;
+}
 .footer-bottom-nav-list {
   display: flex;
   gap: 24px;
@@ -541,5 +545,39 @@ footer {
   transition: color 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .footer-nav-list-link:hover {
+  color: #fd9222;
+}
+.footer-subscribe {
+  margin-left: auto;
+}
+.footer-subscribe-input {
+  background-color: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  border-radius: 30px;
+  padding: 13px 24px;
+  width: 313px;
+  margin-right: 8px;
+}
+.footer-subscribe-input::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.3);
+}
+.footer-subscribe-btn {
+  font-family: "Montserrat", sans-serif;
+  border: 0;
+  background-color: #fd9222;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+  padding: 13px 40px;
+  transition: background-color 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    color 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.footer-subscribe-btn:hover {
+  background-color: #fcf1e0;
   color: #fd9222;
 }
