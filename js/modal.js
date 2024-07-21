@@ -12,3 +12,23 @@
     refs.modal.classList.toggle("is-open");
   }
 })();
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Отключаем автоматическое восстановление прокрутки
+  if ("scrollRestoration" in window.history) {
+    window.history.scrollRestoration = "manual";
+  }
+
+  // Прокручиваем страницу вверх при загрузке
+  window.scrollTo(0, 0);
+
+  document.querySelectorAll("nav a").forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute("href")).scrollIntoView({
+        behavior: "smooth",
+      });
+    });
+  });
+});
