@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <!-- <header>
+    <header>
         <div class="container header-container">
             <nav class="header-nav">
                 <a href="./index.html" class="header-logo"><em>Simply </em> Chocolate
@@ -51,8 +51,56 @@
                     </li>
                 </ul>
             </address>
+            <button type="button" class="menu-btn">
+                <svg class="menu-icon" width="" height="28">
+                    <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
         </div>
-    </header> -->
+        <div class="mob-menu is-open">
+            <button type="button" class="menu-close-btn">
+                <svg class="menu-close-icon" width="12" height="12">
+                    <use href="./images/icons.svg#"></use>
+                </svg>
+            </button>
+            <div class="menu-top">
+                <nav class="menu-nav">
+
+                    <ul class="menu-nav-list">
+                        <li class="menu-nav-list-item">
+                            <a href="./index.html" class="menu-nav-list-item-text">Home</a>
+                        </li>
+                        <li class="menu-nav-list-item">
+                            <a href="#process" class="menu-nav-list-item-text">How it&apos;s made?</a>
+                        </li>
+                        <li class="menu-nav-list-item">
+                            <a href="#review" class="menu-nav-list-item-text">Chocolate is loved</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-bottom">
+                <address class="menu-add">
+                    <ul class="menu-add-list">
+                        <li class="menu-add-list-item">
+                            <a href="https://www.instagram.com/" class="menu-add-list-text">
+                                <svg class="add-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="menu-add-list-item">
+                            <a href="https://x.com/?lang=ru" class="menu-add-list-text">
+                                <svg class="add-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+        </div>
+    </header>
     <main>
         <section class="section hero-section">
             <div class="container hero-container">
@@ -201,7 +249,17 @@
             <div class="container process-container">
                 <h2 class="process-title">How it&apos;s <span class="title-span">made?</span></h2>
                 <div class="process-content">
-                    <img src="./images/image.jpg" alt="Procces" class="process-img" width="335" height="500">
+                    <picture>
+                        <source srcset="./images/process-desk.jpg 1x,images/process-desk@2x.jpg 2x"
+                            media="(min-width:1158px)">
+                        <source srcset="./images/process-tab.jpg 1x, images/process-tab@2x.jpg 2x"
+                            media="(min-width:768px)">
+                        <source srcset="./images/process-mob.jpg 1x, ./images/process-mob@2x.jpg 2x"
+                            media="(min-width:320px)">
+                        <img srcset="./images/process-mob.jpg 1x, ./images/process-mob@2x.jpg 2x"
+                            src="./images/process-mob.jpg" alt="Procces" class="process-img">
+                    </picture>
+
                     <div class="process-content-list">
                         <h3 class="process-text">Try our chocolates today and discover the perfect balance of flavor
                         </h3>
@@ -225,7 +283,7 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="section review" id="review">
+        <section class="section review" id="review">
             <div class="container review-container">
                 <h2 class="review-title"><span class="title-span">Chocolate</span> is loved</h2>
                 <ul class="review-list">
@@ -261,9 +319,9 @@
                 </ul>
                 <button type="button" class="review-btn" data-modal-open>Leave a review</button>
             </div>
-        </section> -->
+        </section>
     </main>
-    <!-- <footer id="footer">
+    <footer id="footer">
         <div class="container footer-container">
             <div class="footer-top">
                 <h2 class="footer-top-title"><span class="title-span">Chocolate</span> a delicious cure for a bad day
@@ -300,8 +358,8 @@
                 </form>
             </div>
         </div>
-    </footer> -->
-    <!-- <div class="modal-overlay" data-modal>
+    </footer>
+    <div class="modal-overlay" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
                 <svg class="modal-close-icon" width="14" height="14">
@@ -358,7 +416,7 @@
                 <button type="submit" class="modal-send-btn">Send</button>
             </form>
         </div>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
 </body>
 
