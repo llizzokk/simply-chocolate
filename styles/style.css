@@ -3,6 +3,7 @@ body {
   color: black;
   background-color: #fafafa;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 /* reset */
