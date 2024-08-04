@@ -30,6 +30,11 @@ img {
 button {
   cursor: pointer;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 /* common */
 
 .container {
@@ -201,8 +206,9 @@ button {
   align-items: center;
   gap: 18px;
 }
-.add-icon {
-  fill: #f4f4fd;
+.menu-add-icon {
+  fill: #1e1823;
+  stroke: #f4f4fd;
 }
 
 /* main */
