@@ -152,92 +152,50 @@ button {
   pointer-events: auto;
 }
 .menu-close-btn {
+  border: none;
   border-radius: 100%;
   background-color: transparent;
-  border: 1px solid #e7e9fc;
+  width: 28px;
+  height: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 8px;
   cursor: pointer;
+  margin-left: auto;
 }
 .mob-close-icon {
-  fill: #2e2f42;
+  stroke: white;
 }
-.mob-navigation {
-  list-style-type: none;
+.menu-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.mob-menu-list-item {
-  margin-bottom: 40px;
-}
-.mob-navigation-link {
-  text-decoration: none;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 111%;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.mob-navigation-link:hover,
-.mob-navigation-link:focus,
-.mob-navigation-link.current-page {
-  color: #404bbf;
-}
-.mob-add {
-  font-style: normal;
-}
-.mob-adress {
-  list-style-type: none;
-  margin-bottom: 48px;
-}
-.mob-add-item {
+.menu-nav-list-item:not(:last-child) {
   margin-bottom: 24px;
 }
-.mob-add-link {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 120%;
-  letter-spacing: 0.02em;
-  color: #434455;
+.menu-nav-list-item-text {
   text-decoration: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114%;
+  letter-spacing: -0.02em;
+  color: white;
 }
-.mob-add-link:hover,
-.head-add-link:focus {
-  color: #404bbf;
+.menu-nav-list-item-text.current-page {
+  color: #fd9222;
 }
-.mob-add-item:last-child {
-  margin-bottom: 0;
+.menu-add {
+  font-style: normal;
 }
-.mob-soc-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style-type: none;
-  gap: 40px;
-}
-.mob-soc-list-item {
-  width: 40px;
-  height: 40px;
-}
-.mob-soc-link {
+.menu-add-list {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  background-color: #4d5ae5;
-  border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  gap: 18px;
 }
-.mob-soc-link:hover,
-.mob-soc-link:focus {
-  background-color: #404bbf;
-}
-.mob-soc-icon {
+.add-icon {
   fill: #f4f4fd;
 }
 
@@ -984,6 +942,9 @@ footer {
 @media screen and (min-width: 768px) {
   .container {
     width: 704px;
+  }
+  .mob-menu {
+    display: none;
   }
   .hero-section {
     padding-bottom: 40px;
