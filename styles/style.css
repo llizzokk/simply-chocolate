@@ -866,7 +866,7 @@ footer {
   padding: 8px 16px;
   border: 1px solid rgba(17, 17, 17, 0.05);
   outline: none;
-  background-color: none;
+  background-color: transparent;
   border-radius: 13px;
   box-sizing: border-box;
   /* width: 360px; */
